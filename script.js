@@ -36,7 +36,7 @@ function addFeedback(){
     const messageInput = document.getElementById('message').value;
     const feedbackItem = {username: username, email: email, message: messageInput};
     
-    feedbackList?.push(feedbackItem);
+    feedbackList.push(feedbackItem);
     localStorage.setItem("userFeedbackList", JSON.stringify(feedbackList));
     renderListElement(feedbackItem);
 }
