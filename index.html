@@ -9,21 +9,21 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <form action="javascript:addFeedback()">
             <label for="name">Brukernavn</label> <br>
             <input type="text" id="name" name="name" required> <br>
 
             <label for="email">Email</label> <br>
             <input type="email" name="email" id="email" required> <br>
 
-            <div class="rating">
+<!--             <div class="rating">
                 <input type="number" name="rating" hidden>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
-            </div>
+            </div> -->
 
             <label for="message">Melding</label> <br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea> <br>
@@ -31,9 +31,13 @@
             <button type="submit">Send</button>
         </form>
 
+        
 
+
+        <div class="feedback">
+            <ul id="userFeedbackList" class="userFeedbackListClass"></ul>
+        </div>
     </div>
-
 
 
 <script src="script.js"></script>
