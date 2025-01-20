@@ -74,22 +74,22 @@ button:active {
 }
 
 #userFeedbackList {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 20px 0; /* Add space between form and feedback list */
-    width: 80%; /* Take full width of the container */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 20px 0; 
+    width: 80%; 
 }
 
 #userFeedbackList li {
     display: flex;
-    flex-direction: column; /* Stack name and message vertically */
-    border: 1px solid #e0e0e0; /* Subtle border for each item */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #ffffff; /* White background */
-    padding: 15px; /* Space inside the feedback card */
-    margin-bottom: 15px; /* Space between feedback cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    word-wrap: break-word; /* Ensure long messages wrap */
+    flex-direction: column; 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff; 
+    padding: 15px; 
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    word-wrap: break-word; 
     width: 80%;
     
 }
