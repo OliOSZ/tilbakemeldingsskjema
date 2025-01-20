@@ -1,11 +1,7 @@
 .container {
-    max-width: 500px;
+    display: flex;
     margin: 0 auto;  
     padding: 20px; 
-    background-color: #ebebeb;
-    border: 1px solid #ddd;
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -23,7 +19,8 @@ label {
     color: #333333;
     font-weight: bold;
     margin-bottom: 5px;
-    display: block; 
+    display: flex;
+    justify-content: left; 
 }
 
 input, textarea {
@@ -65,17 +62,22 @@ button:active {
 .feedback {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the feedback list */
+    align-items: center; 
     padding: 20px;
-    max-width: 900px;
-    margin: 0 auto; /* Center horizontally */
+    width: 40%;
+    margin-left: 50%;
+    background-color: #ebebeb;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
 }
 
 #userFeedbackList {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
     margin: 20px 0; /* Add space between form and feedback list */
-    width: 100%; /* Take full width of the container */
+    width: 80%; /* Take full width of the container */
 }
 
 #userFeedbackList li {
@@ -88,26 +90,6 @@ button:active {
     margin-bottom: 15px; /* Space between feedback cards */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     word-wrap: break-word; /* Ensure long messages wrap */
-    width: 100%;
-    max-width: 600px; /* Optional: Limit max width for better readability */
-}
-
-/* Name Box Styling */
-#userFeedbackList li .feedback-name {
-    background-color: #f8f9fa; /* Light gray background */
-    font-weight: bold; /* Bold text for name */
-    padding: 8px 10px;
-    border-bottom: 1px solid #e0e0e0; /* Separator between name and message */
-    border-radius: 6px 6px 0 0; /* Round only the top corners */
-    font-size: 14px;
-    color: #333333; /* Dark text */
-    text-align: left; /* Left-aligned text */
-}
-
-/* Message Box Styling */
-#userFeedbackList li .feedback-message {
-    padding: 10px; /* Space inside the message box */
-    font-size: 14px; /* Standard font size */
-    color: #555555; /* Subtle text color */
-    text-align: left; /* Left-align the message */
+    width: 80%;
+    
 }
