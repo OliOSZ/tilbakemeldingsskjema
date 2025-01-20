@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>tilbakemeldingsskjema</title>
 </head>
 <body>
     <div class="container">
         <form action="">
-            <label for="name">Username</label> <br>
+            <label for="name">Brukernavn</label> <br>
             <input type="text" id="name" name="name" required> <br>
 
             <label for="email">Email</label> <br>
-            
+            <input type="email" name="email" id="email" required> <br>
+
+            <div class="rating">
+                <input type="number" name="rating" hidden>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+            </div>
+
+            <label for="message">Melding</label> <br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea> <br>
+
+            <button type="submit">Send</button>
         </form>
+
+
     </div>
 
 
