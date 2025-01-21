@@ -2,7 +2,7 @@ const submit = document.getElementById('submit')
 const feedbackListUi = document.getElementById('userFeedbackList')
 let feedbackList = readFeedbackList()
 
-// if nothing exists we need empty array
+// if nothing exists an empty array is needed
 function readFeedbackList(){
     const feedbackList = JSON.parse(localStorage.getItem("userFeedbackList"));
     if (feedbackList) {
