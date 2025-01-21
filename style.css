@@ -93,3 +93,20 @@ button:active {
     width: 80%;
     
 }
+
+
+h1 {
+    font-size: 18px;
+    font-weight: bold; 
+    color: #333333; 
+    margin-bottom: 10px; 
+    text-transform: capitalize; 
+}
+
+p {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+    margin-top: 5px;
+    word-wrap: break-word;
+}

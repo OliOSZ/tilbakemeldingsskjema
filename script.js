@@ -2,7 +2,7 @@ const submit = document.getElementById('submit')
 const feedbackListUi = document.getElementById('userFeedbackList')
 let feedbackList = readFeedbackList()
 
-// if nothing exists why need empty array
+// if nothing exists we need empty array
 function readFeedbackList(){
     const feedbackList = JSON.parse(localStorage.getItem("userFeedbackList"));
     if (feedbackList) {
@@ -14,9 +14,9 @@ function readFeedbackList(){
 // so i dont have to fix stuff twice
 function renderListElement(userFeedbackItem){
     const listItem = document.createElement('li');
-    const contentElementUsername= document.createElement('div');
+    const contentElementUsername= document.createElement('h1');
     contentElementUsername.textContent = userFeedbackItem.username;
-    const contentElementMessage= document.createElement('div');
+    const contentElementMessage= document.createElement('p');
     contentElementMessage.textContent = userFeedbackItem.message;
     listItem.appendChild(contentElementUsername);
     listItem.appendChild(contentElementMessage);
